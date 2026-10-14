@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Local | Comida caseira mineira</title>
+
+    <!-- Fontes do Google Fonts: Open Sans, Montserrat e Alice -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@400;500&family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!-- Conexão com o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO: logotipo e menu de navegação -->
+    <header>
+        <img class="logo-cabecalho" src="img/logo.png" alt="Logotipo do Sabor Local">
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SEÇÃO 1: apresentação (tela inicial) -->
+        <section id="inicio" class="apresentacao">
+            <img class="logo-grande" src="img/logo.png" alt="Panela sobre um fogão a lenha com o texto Sabor Local">
+            <h1>O gostinho mineiro, direto da panela</h1>
+            <p class="subtitulo">Comida caseira feita com calma, como na casa da vovó.</p>
+
+            <a class="botao" href="#cardapio">Ver cardápio</a>
+            <a class="botao botao-secundario" href="#contato">Fale com a gente</a>
+        </section>
+
+        <!-- SEÇÃO 2: sobre o restaurante -->
+        <section id="sobre" class="sobre">
+            <h2>Nossa cozinha</h2>
+            <p>
+                O Sabor Local nasceu da vontade de servir comida de verdade:
+                feijão cozinhando devagar, tempero fresco e receitas que passam
+                de geração em geração.
+            </p>
+            <p>
+                Cada prato é preparado no fogão a lenha, com ingredientes
+                escolhidos de produtores da região. É simples, é caseiro e tem
+                o sabor de casa.
+            </p>
+        </section>
+
+        <!-- SEÇÃO 3: cardápio com pratos em destaque -->
+        <section id="cardapio" class="cardapio">
+            <h2>Pratos da casa</h2>
+            <p class="intro-cardapio">Alguns dos pratos que mais saem da nossa cozinha.</p>
+
+            <div class="lista-pratos">
+                <article class="prato">
+                    <img src="img/feijoada.png" alt="Feijoada mineira servida com arroz, couve e farofa">
+                    <div class="info-prato">
+                        <h3>Feijoada Mineira</h3>
+                        <p>Feijão com carnes selecionadas, servido com arroz, couve e farofa.</p>
+                        <span class="preco">R$ 29,00</span>
+                    </div>
+                </article>
+
+                <article class="prato">
+                    <img src="img/frango-quiabo.png" alt="Frango com quiabo em panela de barro">
+                    <div class="info-prato">
+                        <h3>Frango com Quiabo</h3>
+                        <p>Frango cozido no tempero caseiro com quiabo, acompanhado de angu.</p>
+                        <span class="preco">R$ 27,00</span>
+                    </div>
+                </article>
+
+                <article class="prato">
+                    <img src="img/tutu.png" alt="Tutu de feijão com bisteca e ovo">
+                    <div class="info-prato">
+                        <h3>Tutu à Mineira</h3>
+                        <p>Tutu de feijão com bisteca, couve refogada e ovo frito.</p>
+                        <span class="preco">R$ 28,00</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ: contato e créditos -->
+    <footer id="contato">
+        <h2>Contato</h2>
+        <p>Rua das Flores, 123 - Centro</p>
+        <p>Telefone: (00) 0000-0000</p>
+        <p>Aberto todos os dias, das 11h às 15h</p>
+
+        <p class="creditos">
+            Sabor Local - Projeto em grupo de Desenvolvimento Web (UI/UX, HTML e CSS)
+        </p>
+    </footer>
+
+</body>
+</html>
