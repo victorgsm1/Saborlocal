@@ -1,109 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor Local | Comida caseira mineira</title>
-
-    <!-- Fontes do Google Fonts: Open Sans, Montserrat e Alice -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@400;500&family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Sabor Local</title>
 
     <!-- Conexão com o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- CABEÇALHO: logotipo e menu de navegação -->
+    <!-- ===== CABEÇALHO ===== -->
     <header>
-        <img class="logo-cabecalho" src="img/logo.png" alt="Logotipo do Sabor Local">
+        <img src="img/logo-sabor-local.png" alt="Logotipo Sabor Local" width="64" height="74">
 
         <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#cadastro">Cadastro</a>
         </nav>
+
+        <a href="#cadastro" class="botao">Cadastre-se</a>
     </header>
 
     <main>
 
-        <!-- SEÇÃO 1: apresentação (tela inicial) -->
-        <section id="inicio" class="apresentacao">
-            <img class="logo-grande" src="img/logo.png" alt="Panela sobre um fogão a lenha com o texto Sabor Local">
-            <h1>O gostinho mineiro, direto da panela</h1>
-            <p class="subtitulo">Comida caseira feita com calma, como na casa da vovó.</p>
-
-            <a class="botao" href="#cardapio">Ver cardápio</a>
-            <a class="botao botao-secundario" href="#contato">Fale com a gente</a>
+        <!-- ===== INÍCIO ===== -->
+        <section id="home">
+            <h1>Falta pouco para sentir o gostinho mineiro!</h1>
+            <p>Comida de fogão a lenha, feita com ingredientes locais e receitas de família.</p>
+            <a href="#cardapio" class="botao">Ver cardápio</a>
         </section>
 
-        <!-- SEÇÃO 2: sobre o restaurante -->
-        <section id="sobre" class="sobre">
-            <h2>Nossa cozinha</h2>
-            <p>
-                O Sabor Local nasceu da vontade de servir comida de verdade:
-                feijão cozinhando devagar, tempero fresco e receitas que passam
-                de geração em geração.
-            </p>
-            <p>
-                Cada prato é preparado no fogão a lenha, com ingredientes
-                escolhidos de produtores da região. É simples, é caseiro e tem
-                o sabor de casa.
-            </p>
+        <!-- ===== SOBRE ===== -->
+        <section id="sobre">
+            <h2>Por que Sabor Local?</h2>
+            <p>Somos parceiros de produtores e cozinheiras da região. Cada prato conta uma história de <strong>Minas Gerais</strong>.</p>
+
+            <ul>
+                <li>Mais de 30 pratos típicos mineiros</li>
+                <li>Ingredientes frescos e locais</li>
+                <li>Entrega rápida e comida quentinha</li>
+            </ul>
         </section>
 
-        <!-- SEÇÃO 3: cardápio com pratos em destaque -->
-        <section id="cardapio" class="cardapio">
-            <h2>Pratos da casa</h2>
-            <p class="intro-cardapio">Alguns dos pratos que mais saem da nossa cozinha.</p>
+        <!-- ===== CARDÁPIO ===== -->
+        <section id="cardapio">
+            <h2>Nosso Cardápio</h2>
 
-            <div class="lista-pratos">
-                <article class="prato">
-                    <img src="img/feijoada.png" alt="Feijoada mineira servida com arroz, couve e farofa">
-                    <div class="info-prato">
-                        <h3>Feijoada Mineira</h3>
-                        <p>Feijão com carnes selecionadas, servido com arroz, couve e farofa.</p>
-                        <span class="preco">R$ 29,00</span>
-                    </div>
-                </article>
+            <div class="pratos">
+                <figure>
+                    <img src="img/prato-mineiro.jpg" alt="Prato mineiro com arroz, banana frita e couve" width="230" height="230">
+                    <figcaption>
+                        <strong>Prato mineiro completo</strong><br>
+                        R$ 60
+                    </figcaption>
+                </figure>
 
-                <article class="prato">
-                    <img src="img/frango-quiabo.png" alt="Frango com quiabo em panela de barro">
-                    <div class="info-prato">
-                        <h3>Frango com Quiabo</h3>
-                        <p>Frango cozido no tempero caseiro com quiabo, acompanhado de angu.</p>
-                        <span class="preco">R$ 27,00</span>
-                    </div>
-                </article>
+                <figure>
+                    <img src="img/batatas-carne.jpg" alt="Batatas douradas com carne desfiada" width="230" height="230">
+                    <figcaption>
+                        <strong>Batatas com carne desfiada</strong><br>
+                        R$ 45
+                    </figcaption>
+                </figure>
 
-                <article class="prato">
-                    <img src="img/tutu.png" alt="Tutu de feijão com bisteca e ovo">
-                    <div class="info-prato">
-                        <h3>Tutu à Mineira</h3>
-                        <p>Tutu de feijão com bisteca, couve refogada e ovo frito.</p>
-                        <span class="preco">R$ 28,00</span>
-                    </div>
-                </article>
+                <figure>
+                    <img src="img/feijao-linguica.jpg" alt="Feijão com linguiça, arroz e farofa" width="230" height="230">
+                    <figcaption>
+                        <strong>Feijão com linguiça</strong><br>
+                        R$ 55
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/galinhada.jpg" alt="Arroz com frango assado" width="230" height="230">
+                    <figcaption>
+                        <strong>Galinhada mineira</strong><br>
+                        R$ 40
+                    </figcaption>
+                </figure>
             </div>
+        </section>
+
+        <!-- ===== CADASTRO ===== -->
+        <section id="cadastro">
+            <h2>Cadastro</h2>
+
+            <form action="#" method="POST">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="confirmar">Confirmar senha</label>
+                <input type="password" id="confirmar" name="confirmar" required>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
     </main>
 
-    <!-- RODAPÉ: contato e créditos -->
-    <footer id="contato">
-        <h2>Contato</h2>
-        <p>Rua das Flores, 123 - Centro</p>
-        <p>Telefone: (00) 0000-0000</p>
-        <p>Aberto todos os dias, das 11h às 15h</p>
-
-        <p class="creditos">
-            Sabor Local - Projeto em grupo de Desenvolvimento Web (UI/UX, HTML e CSS)
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+        <p>
+            <strong>Sabor Local</strong><br>
+            E-mail: <a href="mailto:contato@saborlocal.com.br">contato@saborlocal.com.br</a><br>
+            Telefone: <a href="tel:+551140000000">(11) 4000-0000</a>
         </p>
+        <p><small>&copy; 2026 Sabor Local. Projeto acadêmico.</small></p>
     </footer>
 
 </body>
+
 </html>
